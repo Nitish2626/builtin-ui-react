@@ -7,7 +7,7 @@ type Button = {
     style?: string
 }
 
-const Button:React.FC = ({ text="Click Me", image, click, style }: Button) => {
+const Button:React.FC = ({ text, image, click, style }: Button) => {
     return (
         <button
             className={`flex items-center justify-center gap-2 bg-white text-black text-lg font-semibold rounded-md py-2 px-4 ${style}`}

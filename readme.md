@@ -25,20 +25,23 @@
 
 ```js
 import { Button } from "builtin-ui-react";
+import { GiClick } from "react-icons/gi";
 
 const Home = () => {
     return(
         <Button
             text="Click Me"
-            image="abc.jpg"
+            image={<GiClick />}
             click={() => alert("Hello World")}
-            style="ml-10"
+            style="bg-black text-white"
         />;
     );
 };
 
 export default Home;
 ```
+### Output :
+![Button](./images/button.png)
 
 `<Input /> Component` :
 
@@ -62,6 +65,7 @@ export default Home;
 
 ```js
 import { Input } from "builtin-ui-react";
+import { FaUser } from "react-icons/fa";
 
 const Home = () => {
   return (
@@ -72,7 +76,7 @@ const Home = () => {
       inputValue={userVal}
       onInputChange={inputChange}
       inputStyle="bg-black text-white"
-      icon="pqr.png"
+      icon={<FaUser />}
       iconStyle="bg-black text-white"
     />
   );
@@ -80,3 +84,7 @@ const Home = () => {
 
 export default Home;
 ```
+
+### Output :
+
+![Input](./images/input.png)
